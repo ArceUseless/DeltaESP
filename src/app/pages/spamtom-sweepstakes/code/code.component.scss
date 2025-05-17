@@ -1,0 +1,61 @@
+
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../../../../assets/images/sweepstakes/bg-tree.png') !important;
+    font-family: "Georgia", Georgia, serif;
+    color: black;
+  }
+
+.code-container{
+    padding: 1rem;
+    padding-top: 120px;
+    width: 100%;  
+}
+
+.code-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+
+.code-header, .code-info{
+    padding: 1rem;
+    background-color: #EFBCE7;
+}
+
+.free-mp3{
+    justify-content: flex-end !important;
+}
+
+.post-footer{
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.comments-footer{
+    text-align: center;
+    margin-top: 0.75rem;
+    a{
+        color: #3832F0;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: lowercase;
+        text-decoration: underline;
+    }
+}
+.disabled{
+    margin-left: 2rem;
+    cursor: not-allowed;
+    color: #555555 !important;
+}
+
+p{
+    margin-top: 0;
+}
+

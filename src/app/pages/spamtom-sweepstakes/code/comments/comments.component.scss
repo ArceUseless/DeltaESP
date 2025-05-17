@@ -1,0 +1,112 @@
+
+:host {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../../../../../assets/images/sweepstakes/bg-tree.png') !important;
+    font-family: "Georgia", Georgia, serif;
+    color: black;
+  }
+
+.code-container{
+    padding: 1rem;
+    padding-top: 120px;
+    width: 100%;  
+}
+
+.code-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+
+.code-header, .code-info{
+    padding: 1rem;
+    background-color: #EFBCE7;
+}
+
+.free-mp3{
+    justify-content: flex-end !important;
+}
+
+.post-footer{
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.comments-footer{
+    text-align: center;
+    margin-top: -0.5rem;
+    a{
+        color: #3832F0;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: lowercase;
+        text-decoration: underline;
+    }
+}
+.disabled{
+    margin-left: 2rem;
+    cursor: not-allowed;
+    color: #555555 !important;
+}
+
+p{
+    margin-top: 0;
+}
+
+.comment-header{
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background: #EFBCE7;
+    span{
+        color: #3832F0;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.comment-info{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.user{
+    padding-top: 0.5rem;
+}
+
+small{
+    color: #555555;
+}
+
+.comment-container{
+    margin-top: -10px;
+    background: #ffd5ef;
+}
+
+.special-comment{
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 16px;
+        font-family: monospace;
+        margin: 10px !important;
+        font-weight: bold;
+    }
+    background-color: #FFA9A9;
+    color: #01620c;
+}
+
+.back{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 24px;
+}

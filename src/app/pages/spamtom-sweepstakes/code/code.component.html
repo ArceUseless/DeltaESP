@@ -1,0 +1,50 @@
+<div class="code-container">
+    <div class="code-content">
+        <div class="code-header">
+            <img src="assets/images/sweepstakes/welcome.png" width="614" height="102" alt="Bienvenidos al blog de secretos, glitches y teorías de holidaygirl1225">
+            <img style="margin-left: 2rem;" src="assets/images/sweepstakes/xmas.png" width="100" height="102" alt="Ornamento navideño">
+        </div>
+        <div class="free-mp3">
+            <div class="mp3-box">
+                <div class="audio-player">
+                    <button (click)="togglePlay()" [class.playing]="isPlaying">
+                      {{ isPlaying ? '⏸' : '▶' }}
+                    </button>
+                    <img src="assets/images/sweepstakes/volume.png" width="24" height="24" alt="Volumen">
+                    <input
+                      type="range"
+                      min="0"
+                      max="1"
+                      step="0.01"
+                      ngMod
+                      [(ngModel)]="volume"
+                      (input)="changeVolume()"
+                    />
+                  </div>
+                  <audio loop #audioRef1 src="../../../assets/audio/bgm/midi-holiday-country.mp3"></audio>
+            </div>
+        </div>
+        <div class="code-info">
+            <p>Hoy la página oficial de Dragon Blazers se ha actualizado y han añadido unos cuantos enlaces extraños.</p>
+            <p>He estado buscando <a style="text-decoration: none;" href="/egg">pistas</a> por la página oficial y de momento he encontrado unas 40 páginas.</p>
+            <p>No parece ser un ARG ya que no hay puzles y no lleva a ningún lado.</p>
+            <p>¿Alguien más piensa que los desarrolladores han estado comiendo demasiado pastel de frutas este año? XP</p>
+            <div class="post-footer">
+                <div>
+                    <strong>Humor: </strong>
+                    <span>Curiosa</span>
+                </div>
+                <div style="margin-top: 0.5rem;">
+                    <strong>Escuchando: </strong>
+                    <span>Machacasangres La Banda - Alza Tu Bate</span>
+                </div>
+            </div>
+            <div class="comments-footer">
+                <a href="code/comments">14 comentarios</a>
+                <a class="disabled" title="Comentarios desactivados">(dejar un comentario)</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

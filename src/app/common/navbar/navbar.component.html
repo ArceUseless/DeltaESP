@@ -1,0 +1,55 @@
+<div class="navbar-container">
+    <div class="logo" (click)="goTo('home')">
+        <img src="assets/images/logo.webp" alt="Logo Twitter" class="logo-img">
+        <div class="logo-text">DeltaESP</div>
+    </div>
+    <div class="text-container">
+        <div class="animated-text" *ngIf="currentText">{{ currentText }}</div>
+      </div>
+    <div class="links-container">
+        <div class="links">
+            <img src="assets/images/spamtom-sweepstakes-disabled.webp" alt="Logo Spamtom Sweepstakes" class="spamtom-link noselect" (click)="playsound('pipis-laugh.ogg', true)">
+            <a class="noselect" href="#inicio">INICIO</a>
+            <a class="noselect" href="#tradus">DESCARGAS</a>
+        </div>
+        <div class="social-links">
+            <a target="_blank" class="noselect"href="https://x.com/ArceUseless"><img src="assets/images/twitter.svg" alt="Logo Twitter" class="media-logo"></a>
+            <a target="_blank" class="noselect" href="https://www.youtube.com/@arceuse1999/videos"><img src="assets/images/youtube.svg" alt="Logo YouTube" class="media-logo"></a>
+        </div>
+        <a target="_blank" href="https://discord.gg/mWAbyeRBAa" class="join-discord noselect">
+            <img id="discord-logo" src="assets/images/discord.svg" alt="Logo Discord" class="media-logo noselect">
+            <div>¡ÚNETE AL DISCORD!</div>
+        </a>
+    </div>
+    <div class="hamburger noselect" (click)="toggleMenu()">☰</div>
+</div>
+
+<div class="menu-container" [class.open]="isOpen">
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="assets/images/logo.webp" alt="Logo Twitter" class="logo-img">
+            <div>DeltaESP</div>
+        </div>
+    </div>
+    <div class="menu-items-container">
+        <a class="noselect" href="#inicio" (click)="toggleMenu()">INICIO</a>
+        <a class="noselect" href="#tradus" (click)="toggleMenu()">DESCARGAS</a>
+        <a class="noselect" style="color: #979797; cursor: pointer;" (click)="playsound('pipis-laugh.ogg', true)">SPAMTOM SWEEPSTAKES EN ESPAÑOL (EN PROCESO)</a>
+    </div>
+    <div [class]="him ? 'him' : ''" (click)="himremove()"></div>
+    <div class="menu-social-links">
+        <a target="_blank" class="noselect" href="https://x.com/ArceUseless"><img src="assets/images/twitter.svg" alt="Logo Twitter" class="media-logo"></a>
+        <a target="_blank" class="noselect" href="https://www.youtube.com/@arceuse1999/videos"><img src="assets/images/youtube.svg" alt="Logo YouTube" class="media-logo"></a>
+        <a target="_blank" href="https://discord.gg/mWAbyeRBAa" class="join-discord noselect">
+            <img id="discord-logo" src="assets/images/discord.svg" alt="Logo Discord" class="media-logo noselect">
+        </a>
+    </div>
+</div>
+
+<div class="lancer noselect">
+    <div *ngIf="lancerCounter>0">{{lancerCounter}}</div>
+    <img [src]="isPlaying ? 'assets/images/lancer-spin.gif' : 'assets/images/lancer-spin.png'"  alt="Lancher :3" (click)="lancer()">
+</div>
+
+
+

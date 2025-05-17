@@ -1,0 +1,267 @@
+<div class="spamtom-container">
+    <div class="spamtom-header">ESTA ES UNA RECONSTRUCCIÓN DEL SPAMTOM SWEEPSTAKES EN ESPAÑOL. NO ES OFICIAL.</div>
+    <div class="spamtom-value-network spm-margins">
+        <iframe  width="730" height="411" src="https://www.youtube.com/embed/61zGGtTdv5s"></iframe>
+        <div class="spamtom-header" style="background-color: transparent; font-size: 36px; margin-top: 0px">MIRA EL FINAL</div>
+    </div>
+
+    <div class="we-did-it spm-margins">
+        <div>  
+            <div style="font-size: 38px; color:#00F700">¡¡¡¡SE ACABÓ!!!!</div>
+            <img src="assets/images/sweepstakes/clipart-present.png" width="255" height="240" alt="Regalo">
+        </div>
+        <div>
+            <img src="assets/images/spamtom-sweepstakes.webp" width="410" height="427" style="padding: 0px 80px;" alt="Spamtom sweepstakes logo">
+        </div>
+        <div>
+            <div style="font-size: 38px; color:#FF2020; font-family: 'Times New Roman', serif;">¡¡LO HEMOS CONSEGUIDO!!</div>
+            <img src="assets/images/sweepstakes/clipart-present-flip.png" width="255" height="240" alt="Regalo invertido">
+        </div>
+    </div>
+
+    <div class="spm-event-info spm-margins">
+        <div><p (click)="abrirModal('modal_about_spamtom')">SOBRE SPAMTOM</p></div>
+        <div (click)="abrirModal('modal_about_org')" style="max-width: 350px;"><p style="max-width: 250px;">SOBRE LA ORGANIZACIÓN BENÉFICA</p></div>
+        <div><p style="color: #8d8d8d;">REGLAS OFICIALES</p></div>
+    </div>
+
+    <div class="free-mp3 spm-margins">
+        <img src="assets/images/sweepstakes/spamdance.gif" width="80" height="50" alt="Spamtom bailongo" [class.disable-element]="!isPlaying">
+        <div class="mp3-box">
+            <span>[¡mp3 Gratuito!] [¡Haz clic aquí!]</span>
+            <div class="audio-player">
+                <button (click)="togglePlay()" [class.playing]="isPlaying">
+                  {{ isPlaying ? '⏸' : '▶' }}
+                </button>
+                <img src="assets/images/sweepstakes/volume.png" width="24" height="24" alt="Volumen">
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  ngMod
+                  [(ngModel)]="volume"
+                  (input)="changeVolume()"
+                />
+              </div>
+              <audio loop #audioRef1 [src]="audios[0]"></audio>
+              <audio loop #audioRef2 [src]="audios[1]"></audio>
+              <audio loop #audioRef3 [src]="audios[2]"></audio>
+              <audio loop #audioRef4 [src]="audios[3]"></audio>
+              <audio loop #audioRef5 [src]="audios[4]"></audio>
+        </div>
+        <img src="assets/images/sweepstakes/music.gif" width="80" height="50" alt="Altavoz" [class.disable-element]="!isPlaying">
+    </div>
+    <div class="link-banner-box">
+        <a href="/secretpipis" class="link-banner" style="background-image: url('assets/images/sweepstakes/prize-banner.gif');"></a>
+        <a href="/secretpipis">¡GUAU! ¡Bien! ¡Haz clic aquí para reclamar tu premio!</a>
+    </div>
+    <div class="link-banner-box">
+        <a href="https://deltarune.com/icee/"class="link-banner" style="background-image: url('assets/images/sweepstakes/icee.gif');"></a>
+        <a href="https://deltarune.com/icee/">¿¿¿Le has visto???</a>
+    </div>
+    <div class="link-banner-box">
+        <a href="https://deltarune.com/secret/"class="link-banner" style="background-image: url('assets/images/sweepstakes/youve-won.gif');"></a>
+        <a href="https://deltarune.com/secret/">¡¡Eres nuestro cliente número 100000000!! ¡¡Qué suerte guau increíble!! ¡Pulsa aquí para obtener tu premio!</a>
+    </div>
+
+    <div class="total-money spm-margins">
+        <div class="total-text">¡¡¡HEMOS CONSEGUIDO UN TOTAL DE <span>322.805,68$</span> PARA LA ORGANIZACIÓN CARICATIVA CHILD'S PLAY!!!<br><a target="_blank" href="https://tiltify.com/+fangamer/spamton-sweepstakes">VER LA CAMPAÑA</a></div>
+        <div class="total-back" style="background-image: url('assets/images/sweepstakes/bar-full.gif');">
+            <div>
+                <p>¡¡¡322.805,68$</p>
+                <span>EN TOTAL!!!</span>
+            </div>
+        </div>
+        <div class="total-back" style="background-image: url('assets/images/sweepstakes/bar-freedom.gif');">
+            <div>
+                <p>¡¡¡58.924,53$</p>
+                <span>PARA OBTENER <span style="color:#007bff;">LA LIBERTAD!!!</span></span>
+            </div>
+        </div>
+        <div class="total-silence">
+            ... Y TAMBIÉN 28.786,45$ PARA <span style="color: #909090;">EL SILENCIO</span>
+        </div>
+    </div>
+    <div class="prices-header spm-margins"> 
+        <div class="prices-img">
+            <img src="assets/images/sweepstakes/email1.gif" style="top: 24%; left: 31%; transform: rotate(-2deg);" alt="Email gif">
+            <img src="assets/images/sweepstakes/email3.gif" style="top: 74%; left: 28%; transform: rotate(8deg);" alt="Email gif 2">
+        </div>
+        <div class="prices-text">
+            <div style="transform: scale(0.8, 1.4); width: 584px; min-width: 584px; text-align: center;">$pamton $weepstakes</div>
+            <div style="text-align: center;">PREMIOS</div>
+        </div>
+        <div class="prices-img">
+            <img src="assets/images/sweepstakes/free2.gif" style="top: 24%; left: 31%; transform: rotate(-2deg);" alt="Gratis">
+            <img src="assets/images/sweepstakes/cash1.gif" style="top: 59%; left: 44%; transform: rotate(6deg);" alt="Dinero">
+            <img src="assets/images/sweepstakes/thanks2.gif" style="top: 69%; left: 9%; transform: rotate(-4deg);" alt="Agradecimiento">
+        </div>
+    </div>
+
+    <div class="spm-margins prices-section">
+        <div class="price-card" *ngFor="let price of pricesCard" (click)="abrirModal('modal_price', price)" >
+            <img [src]="price.card_img" alt="Imagen premio">
+            <span>{{price.title}}</span>
+        </div>
+    </div>
+
+    <div class="prices-header spm-margins"> 
+        <div class="prices-img">
+            <img src="assets/images/sweepstakes/email1.gif" style="top: 24%; left: 31%; transform: rotate(-2deg);" alt="Email gif">
+            <img src="assets/images/sweepstakes/email3.gif" style="top: 74%; left: 28%; transform: rotate(8deg);" alt="Email gif 2">
+        </div>
+        <div class="prices-text">
+            <div style="transform: scale(1.4, 0.8);  text-align: center; font-size: 40px;">$pamton G. $pamton</div>
+            <div style="transform: translate(20px, 0); text-align: center; font-size: 36px;">CASA DE EMPEÑOS [PEZ GORDO]
+            </div>
+        </div>
+        <div class="prices-img">
+            <img src="assets/images/sweepstakes/free2.gif" style="top: 24%; left: 31%; transform: rotate(-2deg);" alt="Gratis">
+            <img src="assets/images/sweepstakes/cash1.gif" style="top: 59%; left: 44%; transform: rotate(6deg);" alt="Dinero">
+            <img src="assets/images/sweepstakes/thanks2.gif" style="top: 69%; left: 9%; transform: rotate(-4deg);" alt="Agradecimiento">
+        </div>
+    </div>
+
+    <div class="spm-margins auctions-section">
+        <div class="auction-card" *ngFor="let auction of auctionsCard" (click)="abrirModal('modal_auction', auction)" >
+            <img [src]="auction.card_img" alt="Imagen subasta">
+            <div class="auction-card-data">
+                <div style="height: 66px; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                    <label>{{auction.title}}</label>
+                </div>
+                <div class="final-auction">
+                    <h3>PUJA FINAL:</h3>
+                    <span>{{auction.price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="link-banner-box" style="margin-top: 100px;">
+        <a target="_blank" href="/code" class="link-banner" style="background-image: url('assets/images/sweepstakes/secrets-webring.gif');"></a>
+        <a target="_blank" href="/code">¡Esta página forma parte de un anillo de webs de glitches y secretos de videojuegos!</a>
+    </div>
+
+    <div class="end-links" style="margin-top: 100px; margin-bottom: 200px;">
+        <a class="whatsnext" href="/chapter3">¿Qué viene a continuación?</a>
+        <div style="height: 200px;"></div>
+    </div>
+</div>
+
+<!-- Modal de los premios-->
+
+<div #modal_price class="modal" (click)="cerrarModalSiClickFuera($event, 'modal_price')">
+    <div class="modal-contenido" (click)="$event.stopPropagation()">
+        <div class="modal-header-price">
+            <div [ngStyle]="{ display: currentPrice.special && currentPrice.special == 1 ? 'none' : 'flex' }" class="price-value-tag">
+                <s>Precio:<br>{{currentPrice.price}}</s> 
+            </div>
+            <p [ngStyle]="{ display: currentPrice.special && currentPrice.special == 1 ? 'none' : '' }">¡¡¡GRATIS!!!*</p>
+            <span class="modal-cerrar" (click)="cerrarModal('modal_price')">&times;</span>
+        </div>
+        <div class="premio-box">
+            <div>
+                <img class="funny-price-img" src="{{currentPrice.funnyimg}}"  alt="{{currentPrice.alt}}">
+                <video id="price-video" autoplay="" class="video" loop="" muted playsinline="" poster="{{currentPrice.card_img}}"><source id="price-source-webm" [src]="currentPrice.video+'.webm'" type="video/webm"><source id="price-source-mp4" [src]="currentPrice.video+'.mp4'" type="video/mp4"></video>
+                <div class="prices-images">
+                    <img class="price-img" *ngFor="let image of currentPrice.images" src="{{image}}" alt="{{currentPrice.title}}">
+                </div>
+                
+            </div>
+            <div [class.special-price]="currentPrice.special && currentPrice.special == 1">
+                <p *ngFor="let text of currentPrice.sanitizedTexts" [innerHTML]="text"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal de las subastas-->
+<div #modal_auction class="modal" (click)="cerrarModalSiClickFuera($event, 'modal_auction')">
+    <div class="modal-contenido" (click)="$event.stopPropagation()">
+        <div class="modal-header-auction">
+            <h2>{{currentPrice.title}}</h2>
+            <span class="modal-cerrar" (click)="cerrarModal('modal_price')">&times;</span>
+        </div>
+        <div class="auction-box">
+            <video id="auction-video" autoplay="" class="video" loop="" muted playsinline="" poster="{{currentPrice.card_img}}"><source id="auction-source-webm" [src]="currentPrice.video+'.webm'" type="video/webm"><source id="auction-source-mp4" [src]="currentPrice.video+'.mp4'" type="video/mp4"></video>
+            <div class="prices-images">
+                <img class="price-img" *ngFor="let image of currentPrice.images" src="{{image}}" alt="{{currentPrice.title}}">
+            </div>
+            <div class="final-auction">
+                <h3>PUJA FINAL:</h3>
+                <span>{{currentPrice.price}}</span>
+            </div>
+            <div [class.special-price]="currentPrice.special && currentPrice.special == 1">
+                <p *ngFor="let text of currentPrice.sanitizedTexts" [innerHTML]="text"></p>
+            </div>
+            <a href="{{currentPrice.auction}}">VER SUBASTA</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal sobre spamtom-->
+<div #modal_about_spamtom class="modal" (click)="cerrarModalSiClickFuera($event, 'modal_about_spamtom')">
+  <div class="modal-contenido" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+        <h2>SOBRE SPAMTON</h2>
+        <span class="modal-cerrar" (click)="cerrarModal('modal_about_spamtom')">&times;</span>
+    </div>
+    <div style="padding: 0px 15px;">
+        <br>
+        <p>SOY YO, EL [Mejor Comerciante Número Uno] SPAMTON G.</p>
+        <p>¡¡¡¡SPAMTON!!!!</p>
+        <p>PUEDE QUE ME CONOZCAS POR APARECER EN [Todas Partes]</p>
+        <p>Y MIENTRAS LEES ESTO, SIGO HACIÉNDOME MÁS GRANDE</p>
+        <br>
+        <br>
+        <p style="transform: scale(1.3, 2.2);">Y MÁS GRANDE</p>
+        <br>
+        <br>
+        <br>
+        <p style="transform: scale(1.6, 3.4);">Y MÁS GRANDE</p>
+        <br>
+        <br>
+        <br>
+        <p style="transform: scale(0.5, 0.5);">NUNCA ME HE HECHO MÁS PEQUEÑO</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p style="transform: scale(0.3, 0.3);">NUNCA ME HE HECHO MÁS PEQUEÑO</p>
+        <br>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- Modal sobre la organización benéfica-->
+<div #modal_about_org class="modal" (click)="cerrarModalSiClickFuera($event, 'modal_about_org')">
+    <div class="modal-contenido" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+            <h2>SOBRE LA ORGANIZACIÓN BENÉFICA</h2>
+            <span class="modal-cerrar" (click)="cerrarModal('modal_about_org')">&times;</span>
+        </div>
+        <div class="childs-play-card">
+            <div class="childs-play-header">
+                <img src="assets/images/sweepstakes/childsplay-logo.png" width="70" height="70" alt="Logo Child's Play">
+                <h2>Sobre Child's Play</h2>
+            </div>
+            <div class="childs-play-content">
+                <i>Play Games, Feel Better.®</i>
+                <p>Child’s Play está comprometida y enfocada a cambiar la experiencia de ser un paciente en hospitales para niños. Uniendo fuerzas con la organización del hospital y los departamentos de vida infantil, trabajamos sin descanso para comprender sus necesidades tecnológicas, proveer soluciones a sus obstáculos a la hora de jugar videojuegos y otorgarles apoyo económico para ayanar el camino.</p>
+                <p>Aprende más en <a target="_blank" href="https://childsplaycharity.org/site/about">childsplaycharity.org</a></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p style="margin: 0;">AYUDA A LOS [Pequeñines]...</p>
+        <br>
+        <p style="transform: scale(0.5, 0.5);">¡¿¡¿¡¿QUÉ QUIERES DECIR CON QUE YO NO ME LLEVO NADA?!?!?!</p>
+        <br>
+    </div>
+</div>

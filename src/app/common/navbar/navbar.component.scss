@@ -1,0 +1,125 @@
+.text-container {
+    width: 100%; /* Ajusta el tamaño del contenedor */
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .animated-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 250px;
+  
+    /* Animación */
+    animation: slideText 20s linear infinite;
+  }
+  
+  @keyframes slideText {
+    from {
+      transform: translateX(300%); /* Empieza fuera del div */
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-400%); /* Se mueve hasta desaparecer */
+      opacity: 1;
+    }
+  }
+
+.logo{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1450px){  
+    .join-discord{
+        background-color: #ffffff00;
+        margin-left: 0px;
+        padding: 0px !important;
+        div{
+            display: none;
+        }
+    }
+    .media-logo{
+        height: 30px;
+        width: 30px;
+        padding: 0px 5px 0px 5px !important;
+    }
+
+    #discord-logo{
+        content:url("../../../assets/images/discord-purple.svg");
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .links-container{
+        display: none !important;
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .navbar-container{
+        height: 80px !important;
+        min-height: 80px;
+    }
+    .logo-img{
+        height: 60px;
+        width: 60px;
+    }
+    .logo{
+        div{
+            font-size: 30px;
+        }
+    }
+}  
+
+@media screen and (max-width: 800px){
+    .menu-container{
+        left: -75%;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .lancer{
+        bottom: 15px;
+        right: 15px;
+        div{
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        img{
+            height: 54px;
+            width: 54px;
+        }
+    }
+}
+
+@media screen and (max-width: 530px){
+    .lancer{
+        bottom: 10px;
+        right: 10px;
+        div{
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        img{
+            height: 44px;
+            width: 44px;
+        }
+    }
+    .logo-text{
+        display: none;
+    }
+}
