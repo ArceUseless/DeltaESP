@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "dist/delta-esp/browser",
+    "ignore": [],
+    "headers": [
+      {
+        "source": "**/*.@(css|js|html)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
